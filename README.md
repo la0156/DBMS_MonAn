@@ -1,4 +1,6 @@
 # DBMS_MonAn
+![image](https://user-images.githubusercontent.com/44945415/139257619-f556cf9f-0eed-4b5e-a146-4db155009b0a.png)
+
 Đồ án về môn hệ quản trị cơ sở dữ liệu																							 		Phần mềm quản lý món ăn
 
 Phần mềm này giúp cho việc quản lý các món ăn dễ dàng hơn, bên cạnh đó là quản lý nhân viên, khách hàng. Ngoài ra còn là nơi trao đổi các công thức món ăn với nhau
