@@ -1,0 +1,10 @@
+C:\Users\Admin\source\repos\DBMS_MonAn\DAL\bin\Debug\DAL.dll.config
+C:\Users\Admin\source\repos\DBMS_MonAn\DAL\bin\Debug\DAL.dll
+C:\Users\Admin\source\repos\DBMS_MonAn\DAL\bin\Debug\DAL.pdb
+C:\Users\Admin\source\repos\DBMS_MonAn\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\DBMS_MonAn\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\DBMS_MonAn\DAL\obj\Debug\DAL.dll
+C:\Users\Admin\source\repos\DBMS_MonAn\DAL\obj\Debug\DAL.pdb
+C:\Users\Admin\source\repos\DBMS_MonAn\DAL\bin\Debug\DTO.dll
+C:\Users\Admin\source\repos\DBMS_MonAn\DAL\bin\Debug\DTO.pdb
+C:\Users\Admin\source\repos\DBMS_MonAn\DAL\obj\Debug\DAL.csproj.CopyComplete
