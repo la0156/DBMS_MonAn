@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DBMS_MONANDataSet" targetNamespace="http://tempuri.org/DBMS_MONANDataSet.xsd" xmlns:mstns="http://tempuri.org/DBMS_MONANDataSet.xsd" xmlns="http://tempuri.org/DBMS_MONANDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DBMS_MONANConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DBMS_MONANConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.GUI_MonAn.Properties.Settings.GlobalReference.Default.DBMS_MONANConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="MenuMonAnTableAdapter" GeneratorDataComponentClassName="MenuMonAnTableAdapter" Name="MenuMonAn" UserDataComponentName="MenuMonAnTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DBMS_MONANConnectionString (Settings)" DbObjectName="DBMS_MONAN.dbo.MenuMonAn" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT TenMonAn, XuatSu, Gia FROM dbo.MenuMonAn</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TenMonAn" DataSetColumn="TenMonAn" />
+              <Mapping SourceColumn="XuatSu" DataSetColumn="XuatSu" />
+              <Mapping SourceColumn="Gia" DataSetColumn="Gia" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DBMS_MONANDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DBMS_MONANDataSet" msprop:Generator_UserDSName="DBMS_MONANDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MenuMonAn" msprop:Generator_TableClassName="MenuMonAnDataTable" msprop:Generator_TableVarName="tableMenuMonAn" msprop:Generator_TablePropName="MenuMonAn" msprop:Generator_RowDeletingName="MenuMonAnRowDeleting" msprop:Generator_RowChangingName="MenuMonAnRowChanging" msprop:Generator_RowEvHandlerName="MenuMonAnRowChangeEventHandler" msprop:Generator_RowDeletedName="MenuMonAnRowDeleted" msprop:Generator_UserTableName="MenuMonAn" msprop:Generator_RowChangedName="MenuMonAnRowChanged" msprop:Generator_RowEvArgName="MenuMonAnRowChangeEvent" msprop:Generator_RowClassName="MenuMonAnRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TenMonAn" msprop:Generator_ColumnVarNameInTable="columnTenMonAn" msprop:Generator_ColumnPropNameInRow="TenMonAn" msprop:Generator_ColumnPropNameInTable="TenMonAnColumn" msprop:Generator_UserColumnName="TenMonAn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="XuatSu" msprop:Generator_ColumnVarNameInTable="columnXuatSu" msprop:Generator_ColumnPropNameInRow="XuatSu" msprop:Generator_ColumnPropNameInTable="XuatSuColumn" msprop:Generator_UserColumnName="XuatSu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Gia" msprop:Generator_ColumnVarNameInTable="columnGia" msprop:Generator_ColumnPropNameInRow="Gia" msprop:Generator_ColumnPropNameInTable="GiaColumn" msprop:Generator_UserColumnName="Gia" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -78,7 +78,7 @@ namespace GUI_MonAn
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(232, 132);
+            this.label2.Location = new System.Drawing.Point(237, 139);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(132, 32);
             this.label2.TabIndex = 16;
@@ -88,7 +88,7 @@ namespace GUI_MonAn
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(232, 62);
+            this.label1.Location = new System.Drawing.Point(237, 50);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(137, 32);
             this.label1.TabIndex = 15;
@@ -122,7 +122,7 @@ namespace GUI_MonAn
             this.MatKhau_txt.IconRight = null;
             this.MatKhau_txt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.MatKhau_txt.Lines = new string[0];
-            this.MatKhau_txt.Location = new System.Drawing.Point(396, 132);
+            this.MatKhau_txt.Location = new System.Drawing.Point(395, 128);
             this.MatKhau_txt.MaxLength = 32767;
             this.MatKhau_txt.MinimumSize = new System.Drawing.Size(1, 1);
             this.MatKhau_txt.Modified = false;
@@ -197,7 +197,7 @@ namespace GUI_MonAn
             this.DangNhap_txt.IconRight = null;
             this.DangNhap_txt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.DangNhap_txt.Lines = new string[0];
-            this.DangNhap_txt.Location = new System.Drawing.Point(396, 62);
+            this.DangNhap_txt.Location = new System.Drawing.Point(395, 50);
             this.DangNhap_txt.MaxLength = 32767;
             this.DangNhap_txt.MinimumSize = new System.Drawing.Size(1, 1);
             this.DangNhap_txt.Modified = false;
@@ -261,7 +261,7 @@ namespace GUI_MonAn
             this.Huy_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Huy_btn.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Huy_btn.ForeColor = System.Drawing.Color.Black;
-            this.Huy_btn.Location = new System.Drawing.Point(592, 198);
+            this.Huy_btn.Location = new System.Drawing.Point(591, 211);
             this.Huy_btn.Name = "Huy_btn";
             this.Huy_btn.Size = new System.Drawing.Size(147, 68);
             this.Huy_btn.TabIndex = 8;
@@ -292,6 +292,7 @@ namespace GUI_MonAn
             this.Name = "DangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.DangNhap_Load);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

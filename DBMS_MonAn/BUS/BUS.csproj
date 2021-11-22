@@ -41,9 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DangNhap_BUS.cs" />
+    <Compile Include="CongThuc_BUS.cs" />
+    <Compile Include="DatMon_BUS.cs" />
+    <Compile Include="KhachHang_BUS.cs" />
+    <Compile Include="LoaiMonAn_BUS.cs" />
+    <Compile Include="MonAn_BUS.cs" />
+    <Compile Include="NguyenLieu_BUS.cs" />
     <Compile Include="NhanVien_BUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TaiKhoan_BUS.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">

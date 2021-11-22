@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DBMS_MONANTinhTien" targetNamespace="http://tempuri.org/DBMS_MONANTinhTien.xsd" xmlns:mstns="http://tempuri.org/DBMS_MONANTinhTien.xsd" xmlns="http://tempuri.org/DBMS_MONANTinhTien.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DBMS_MONANConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DBMS_MONANConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.GUI_MonAn.Properties.Settings.GlobalReference.Default.DBMS_MONANConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TinhTienTableAdapter" GeneratorDataComponentClassName="TinhTienTableAdapter" Name="TinhTien" UserDataComponentName="TinhTienTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DBMS_MONANConnectionString (Settings)" DbObjectName="DBMS_MONAN.dbo.TinhTien" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT TenNhanVien, SDT, TenKhachHang, SDTKhachHang, TenMonAn, SoLuong, Gia, GiamGia, ThanhTien, IDDatMon FROM dbo.TinhTien</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TenNhanVien" DataSetColumn="TenNhanVien" />
+              <Mapping SourceColumn="SDT" DataSetColumn="SDT" />
+              <Mapping SourceColumn="TenKhachHang" DataSetColumn="TenKhachHang" />
+              <Mapping SourceColumn="SDTKhachHang" DataSetColumn="SDTKhachHang" />
+              <Mapping SourceColumn="TenMonAn" DataSetColumn="TenMonAn" />
+              <Mapping SourceColumn="SoLuong" DataSetColumn="SoLuong" />
+              <Mapping SourceColumn="Gia" DataSetColumn="Gia" />
+              <Mapping SourceColumn="GiamGia" DataSetColumn="GiamGia" />
+              <Mapping SourceColumn="ThanhTien" DataSetColumn="ThanhTien" />
+              <Mapping SourceColumn="IDDatMon" DataSetColumn="IDDatMon" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DBMS_MONANTinhTien" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DBMS_MONANTinhTien" msprop:Generator_UserDSName="DBMS_MONANTinhTien">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TinhTien" msprop:Generator_TableClassName="TinhTienDataTable" msprop:Generator_TableVarName="tableTinhTien" msprop:Generator_TablePropName="TinhTien" msprop:Generator_RowDeletingName="TinhTienRowDeleting" msprop:Generator_RowChangingName="TinhTienRowChanging" msprop:Generator_RowEvHandlerName="TinhTienRowChangeEventHandler" msprop:Generator_RowDeletedName="TinhTienRowDeleted" msprop:Generator_UserTableName="TinhTien" msprop:Generator_RowChangedName="TinhTienRowChanged" msprop:Generator_RowEvArgName="TinhTienRowChangeEvent" msprop:Generator_RowClassName="TinhTienRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TenNhanVien" msprop:Generator_ColumnVarNameInTable="columnTenNhanVien" msprop:Generator_ColumnPropNameInRow="TenNhanVien" msprop:Generator_ColumnPropNameInTable="TenNhanVienColumn" msprop:Generator_UserColumnName="TenNhanVien" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SDT" msprop:Generator_ColumnVarNameInTable="columnSDT" msprop:Generator_ColumnPropNameInRow="SDT" msprop:Generator_ColumnPropNameInTable="SDTColumn" msprop:Generator_UserColumnName="SDT" type="xs:int" minOccurs="0" />
+              <xs:element name="TenKhachHang" msprop:Generator_ColumnVarNameInTable="columnTenKhachHang" msprop:Generator_ColumnPropNameInRow="TenKhachHang" msprop:Generator_ColumnPropNameInTable="TenKhachHangColumn" msprop:Generator_UserColumnName="TenKhachHang" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SDTKhachHang" msprop:Generator_ColumnVarNameInTable="columnSDTKhachHang" msprop:Generator_ColumnPropNameInRow="SDTKhachHang" msprop:Generator_ColumnPropNameInTable="SDTKhachHangColumn" msprop:Generator_UserColumnName="SDTKhachHang" type="xs:int" minOccurs="0" />
+              <xs:element name="TenMonAn" msprop:Generator_ColumnVarNameInTable="columnTenMonAn" msprop:Generator_ColumnPropNameInRow="TenMonAn" msprop:Generator_ColumnPropNameInTable="TenMonAnColumn" msprop:Generator_UserColumnName="TenMonAn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SoLuong" msprop:Generator_ColumnVarNameInTable="columnSoLuong" msprop:Generator_ColumnPropNameInRow="SoLuong" msprop:Generator_ColumnPropNameInTable="SoLuongColumn" msprop:Generator_UserColumnName="SoLuong" type="xs:int" minOccurs="0" />
+              <xs:element name="Gia" msprop:Generator_ColumnVarNameInTable="columnGia" msprop:Generator_ColumnPropNameInRow="Gia" msprop:Generator_ColumnPropNameInTable="GiaColumn" msprop:Generator_UserColumnName="Gia" type="xs:decimal" minOccurs="0" />
+              <xs:element name="GiamGia" msprop:Generator_ColumnVarNameInTable="columnGiamGia" msprop:Generator_ColumnPropNameInRow="GiamGia" msprop:Generator_ColumnPropNameInTable="GiamGiaColumn" msprop:Generator_UserColumnName="GiamGia" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ThanhTien" msprop:Generator_ColumnVarNameInTable="columnThanhTien" msprop:Generator_ColumnPropNameInRow="ThanhTien" msprop:Generator_ColumnPropNameInTable="ThanhTienColumn" msprop:Generator_UserColumnName="ThanhTien" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IDDatMon" msprop:Generator_ColumnVarNameInTable="columnIDDatMon" msprop:Generator_ColumnPropNameInRow="IDDatMon" msprop:Generator_ColumnPropNameInTable="IDDatMonColumn" msprop:Generator_UserColumnName="IDDatMon" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TinhTien" />
+      <xs:field xpath="mstns:IDDatMon" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

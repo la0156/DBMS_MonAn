@@ -16,8 +16,7 @@ namespace GUI_MonAn
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new TrangChu());
-            Application.Run(new NhanVien());
+            Application.Run(new TrangChu());
         }
     }
 }

@@ -122,32 +122,7 @@ namespace GUI_MonAn
                 MessageBox.Show(ex.Message);
             }
         }
-
-        private void bunifuImageButton1_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                SqlConnection Conn = dbConnectionData.HamKetNoi();
-                Conn.Open();
-                SqlDataAdapter command = new SqlDataAdapter("TimKiemNhanvien", Conn);
-                command.SelectCommand.CommandType = CommandType.StoredProcedure;
-                command.SelectCommand.Parameters.AddWithValue("@searchTen", TimKiemNV_txt.Text.Trim());            
-                DataTable dt = new DataTable();
-                command.Fill(dt);
-                dataGridView1.DataSource = dt;
-                Conn.Close();
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        private void TimKiemNV_txt_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+     
         private void button5_Click(object sender, EventArgs e)
         {
             try
@@ -166,6 +141,16 @@ namespace GUI_MonAn
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void TimKiemNV_txt_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

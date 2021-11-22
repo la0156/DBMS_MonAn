@@ -30,6 +30,10 @@ namespace GUI_MonAn
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NhanVien));
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -58,11 +62,9 @@ namespace GUI_MonAn
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties30 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties31 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties32 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.TimKiemNV_txt = new Bunifu.UI.WinForms.BunifuTextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -87,8 +89,6 @@ namespace GUI_MonAn
             this.DiaChi_txt = new Bunifu.UI.WinForms.BunifuTextBox();
             this.SDT_txt = new Bunifu.UI.WinForms.BunifuTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.TimKiemNV_txt = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.button5 = new System.Windows.Forms.Button();
             this.bunifuGradientPanel1.SuspendLayout();
             this.bunifuGroupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -121,6 +121,93 @@ namespace GUI_MonAn
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(1132, 781);
             this.bunifuGradientPanel1.TabIndex = 0;
+            // 
+            // button5
+            // 
+            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button5.Location = new System.Drawing.Point(768, 703);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(60, 55);
+            this.button5.TabIndex = 22;
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // TimKiemNV_txt
+            // 
+            this.TimKiemNV_txt.AcceptsReturn = false;
+            this.TimKiemNV_txt.AcceptsTab = false;
+            this.TimKiemNV_txt.AnimationSpeed = 200;
+            this.TimKiemNV_txt.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.TimKiemNV_txt.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.TimKiemNV_txt.AutoSizeHeight = true;
+            this.TimKiemNV_txt.BackColor = System.Drawing.Color.Transparent;
+            this.TimKiemNV_txt.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TimKiemNV_txt.BackgroundImage")));
+            this.TimKiemNV_txt.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.TimKiemNV_txt.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.TimKiemNV_txt.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.TimKiemNV_txt.BorderColorIdle = System.Drawing.Color.Silver;
+            this.TimKiemNV_txt.BorderRadius = 1;
+            this.TimKiemNV_txt.BorderThickness = 1;
+            this.TimKiemNV_txt.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.TimKiemNV_txt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TimKiemNV_txt.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.TimKiemNV_txt.DefaultText = "";
+            this.TimKiemNV_txt.FillColor = System.Drawing.Color.White;
+            this.TimKiemNV_txt.HideSelection = true;
+            this.TimKiemNV_txt.IconLeft = null;
+            this.TimKiemNV_txt.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.TimKiemNV_txt.IconPadding = 10;
+            this.TimKiemNV_txt.IconRight = null;
+            this.TimKiemNV_txt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.TimKiemNV_txt.Lines = new string[0];
+            this.TimKiemNV_txt.Location = new System.Drawing.Point(690, 642);
+            this.TimKiemNV_txt.MaxLength = 32767;
+            this.TimKiemNV_txt.MinimumSize = new System.Drawing.Size(1, 1);
+            this.TimKiemNV_txt.Modified = false;
+            this.TimKiemNV_txt.Multiline = false;
+            this.TimKiemNV_txt.Name = "TimKiemNV_txt";
+            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.TimKiemNV_txt.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.TimKiemNV_txt.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.TimKiemNV_txt.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.Silver;
+            stateProperties4.FillColor = System.Drawing.Color.White;
+            stateProperties4.ForeColor = System.Drawing.Color.Empty;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.TimKiemNV_txt.OnIdleState = stateProperties4;
+            this.TimKiemNV_txt.Padding = new System.Windows.Forms.Padding(3);
+            this.TimKiemNV_txt.PasswordChar = '\0';
+            this.TimKiemNV_txt.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.TimKiemNV_txt.PlaceholderText = "Enter text";
+            this.TimKiemNV_txt.ReadOnly = false;
+            this.TimKiemNV_txt.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.TimKiemNV_txt.SelectedText = "";
+            this.TimKiemNV_txt.SelectionLength = 0;
+            this.TimKiemNV_txt.SelectionStart = 0;
+            this.TimKiemNV_txt.ShortcutsEnabled = true;
+            this.TimKiemNV_txt.Size = new System.Drawing.Size(212, 43);
+            this.TimKiemNV_txt.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.TimKiemNV_txt.TabIndex = 21;
+            this.TimKiemNV_txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TimKiemNV_txt.TextMarginBottom = 0;
+            this.TimKiemNV_txt.TextMarginLeft = 3;
+            this.TimKiemNV_txt.TextMarginTop = 1;
+            this.TimKiemNV_txt.TextPlaceholder = "Enter text";
+            this.TimKiemNV_txt.UseSystemPasswordChar = false;
+            this.TimKiemNV_txt.WordWrap = true;
+            this.TimKiemNV_txt.TextChanged += new System.EventHandler(this.TimKiemNV_txt_TextChanged_1);
             // 
             // button4
             // 
@@ -191,9 +278,10 @@ namespace GUI_MonAn
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1126, 283);
+            this.dataGridView1.Size = new System.Drawing.Size(1120, 283);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // bunifuGroupBox1
             // 
@@ -870,92 +958,6 @@ namespace GUI_MonAn
             this.pictureBox1.Size = new System.Drawing.Size(177, 297);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // TimKiemNV_txt
-            // 
-            this.TimKiemNV_txt.AcceptsReturn = false;
-            this.TimKiemNV_txt.AcceptsTab = false;
-            this.TimKiemNV_txt.AnimationSpeed = 200;
-            this.TimKiemNV_txt.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.TimKiemNV_txt.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.TimKiemNV_txt.AutoSizeHeight = true;
-            this.TimKiemNV_txt.BackColor = System.Drawing.Color.Transparent;
-            this.TimKiemNV_txt.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TimKiemNV_txt.BackgroundImage")));
-            this.TimKiemNV_txt.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.TimKiemNV_txt.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.TimKiemNV_txt.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.TimKiemNV_txt.BorderColorIdle = System.Drawing.Color.Silver;
-            this.TimKiemNV_txt.BorderRadius = 1;
-            this.TimKiemNV_txt.BorderThickness = 1;
-            this.TimKiemNV_txt.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.TimKiemNV_txt.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TimKiemNV_txt.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
-            this.TimKiemNV_txt.DefaultText = "";
-            this.TimKiemNV_txt.FillColor = System.Drawing.Color.White;
-            this.TimKiemNV_txt.HideSelection = true;
-            this.TimKiemNV_txt.IconLeft = null;
-            this.TimKiemNV_txt.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.TimKiemNV_txt.IconPadding = 10;
-            this.TimKiemNV_txt.IconRight = null;
-            this.TimKiemNV_txt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.TimKiemNV_txt.Lines = new string[0];
-            this.TimKiemNV_txt.Location = new System.Drawing.Point(690, 642);
-            this.TimKiemNV_txt.MaxLength = 32767;
-            this.TimKiemNV_txt.MinimumSize = new System.Drawing.Size(1, 1);
-            this.TimKiemNV_txt.Modified = false;
-            this.TimKiemNV_txt.Multiline = false;
-            this.TimKiemNV_txt.Name = "TimKiemNV_txt";
-            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.TimKiemNV_txt.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.TimKiemNV_txt.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.TimKiemNV_txt.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.Silver;
-            stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.TimKiemNV_txt.OnIdleState = stateProperties4;
-            this.TimKiemNV_txt.Padding = new System.Windows.Forms.Padding(3);
-            this.TimKiemNV_txt.PasswordChar = '\0';
-            this.TimKiemNV_txt.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.TimKiemNV_txt.PlaceholderText = "Enter text";
-            this.TimKiemNV_txt.ReadOnly = false;
-            this.TimKiemNV_txt.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TimKiemNV_txt.SelectedText = "";
-            this.TimKiemNV_txt.SelectionLength = 0;
-            this.TimKiemNV_txt.SelectionStart = 0;
-            this.TimKiemNV_txt.ShortcutsEnabled = true;
-            this.TimKiemNV_txt.Size = new System.Drawing.Size(212, 43);
-            this.TimKiemNV_txt.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.TimKiemNV_txt.TabIndex = 21;
-            this.TimKiemNV_txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TimKiemNV_txt.TextMarginBottom = 0;
-            this.TimKiemNV_txt.TextMarginLeft = 3;
-            this.TimKiemNV_txt.TextMarginTop = 1;
-            this.TimKiemNV_txt.TextPlaceholder = "Enter text";
-            this.TimKiemNV_txt.UseSystemPasswordChar = false;
-            this.TimKiemNV_txt.WordWrap = true;
-            // 
-            // button5
-            // 
-            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button5.Location = new System.Drawing.Point(768, 703);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(60, 55);
-            this.button5.TabIndex = 22;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // NhanVien
             // 

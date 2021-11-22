@@ -10,7 +10,8 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Data.Sql;
 using BUS;
-
+using DAL;
+using System.Security.Cryptography;
 
 namespace GUI_MonAn
 {
@@ -20,15 +21,32 @@ namespace GUI_MonAn
         {
             InitializeComponent();
         }
-
+        public static string quyen;
         private void DangNhapLogin_btn_Click(object sender, EventArgs e)
         {
-            string userName = DangNhap_txt.Text;
-            string passWord = MatKhau_txt.Text;
-            if (DangNhap_BUS.Login(userName, passWord))
+            byte[] temp = ASCIIEncoding.ASCII.GetBytes("@matkhau");
+            byte[] hasData = new MD5CryptoServiceProvider().ComputeHash(temp);
+            string hasPass = "";
+            foreach(byte item in hasData)
+            {
+                hasPass += item;
+            }
+
+            SqlConnection Conn = dbConnectionData.HamKetNoi();
+            Conn.Open();
+            SqlCommand cmd = new SqlCommand("USP_Login", Conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@taikhoan", DangNhap_txt.Text);
+            cmd.Parameters.AddWithValue("@matkhau", MatKhau_txt.Text);
+            var da = cmd.ExecuteReader();
+            var dt = new DataTable();
+            dt.Load(da);
+            da.Dispose();
+            if (dt.Rows.Count > 0)
             {
                 MessageBox.Show("Đăng nhập thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                NhanVien f = new NhanVien();
+                quyen = dt.Rows[0][0].ToString().Trim();
+                QuanLy f = new QuanLy();
                 this.Hide();
                 f.ShowDialog();
             }
@@ -36,7 +54,7 @@ namespace GUI_MonAn
             {
                 MessageBox.Show("Đăng nhập thất bại");
             }
-        }       
+        }     
 
         private void Huy_btn_Click(object sender, EventArgs e)
         {
@@ -46,6 +64,11 @@ namespace GUI_MonAn
         private void DangNhap_txt_TextChanged(object sender, EventArgs e)
         {
            
+        }
+
+        private void DangNhap_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
